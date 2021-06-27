@@ -15,7 +15,6 @@ class _Screen1State extends State<Screen1> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          automaticallyImplyLeading: false,
           title: Center(
             child: Text(
               "Ecom App UI",
@@ -48,22 +47,135 @@ class _Screen1State extends State<Screen1> {
             child: Column(
               children: [
                 Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Items",
+                        style: TextStyle(
+                          fontSize: 35,
+                        ),
+                      ),
+                      Text(
+                        "view more",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.purple,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Container(
                   color: Colors.red,
-                  height: 210,
+                  height: 250,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
-                      Container(
-                        color: Colors.amber,
-                        width: 200,
-                        height: 200,
-                        margin: EdgeInsets.all(10),
+                      Column(
+                        children: [
+                          Container(
+                            color: Colors.amber,
+                            margin: EdgeInsets.all(10),
+                            child: Image.network(
+                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxeBt1LGBMpP_zw_il4wf6kSVYlIE3xN40AA&usqp=CAU",
+                            ),
+                          ),
+                          Text(
+                            "Note 20 Ultra",
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(
+                                Icons.star,
+                                size: 18,
+                                color: Colors.yellow,
+                              ),
+                              Icon(
+                                Icons.star,
+                                size: 18,
+                                color: Colors.yellow,
+                              ),
+                              Icon(
+                                Icons.star,
+                                size: 18,
+                                color: Colors.yellow,
+                              ),
+                              Icon(
+                                Icons.star,
+                                size: 18,
+                                color: Colors.yellow,
+                              ),
+                              Icon(
+                                Icons.star,
+                                size: 18,
+                                color: Colors.yellow,
+                              ),
+                              Text(
+                                "  5.0 (23 Reviews)",
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
-                      Container(
-                        color: Colors.amber,
-                        width: 200,
-                        height: 200,
-                        margin: EdgeInsets.all(10),
+                      Column(
+                        children: [
+                          Container(
+                            color: Colors.amber,
+                            margin: EdgeInsets.all(10),
+                            child: Image.network(
+                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxeBt1LGBMpP_zw_il4wf6kSVYlIE3xN40AA&usqp=CAU",
+                            ),
+                          ),
+                          Text(
+                            "Note 20 Ultra",
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(
+                                Icons.star,
+                                size: 18,
+                                color: Colors.yellow,
+                              ),
+                              Icon(
+                                Icons.star,
+                                size: 18,
+                                color: Colors.yellow,
+                              ),
+                              Icon(
+                                Icons.star,
+                                size: 18,
+                                color: Colors.yellow,
+                              ),
+                              Icon(
+                                Icons.star,
+                                size: 18,
+                                color: Colors.yellow,
+                              ),
+                              Icon(
+                                Icons.star,
+                                size: 18,
+                                color: Colors.yellow,
+                              ),
+                              Text(
+                                "  5.0 (23 Reviews)",
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                       Container(
                         color: Colors.amber,
